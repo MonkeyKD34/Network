@@ -1,0 +1,266 @@
+/* ===== General Body and Typography ===== */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== Header ===== */
+header {
+    background: #fff;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    height: 60px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.team h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.9em;
+}
+.team ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+.team ul li {
+    font-size: 0.85em;
+}
+
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #005A9C;
+    color: #fff;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.hero p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* ===== Two-Column Comparison Section ===== */
+.columns-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Para responsividad */
+}
+
+.column {
+    flex: 1;
+    min-width: 300px; /* Para responsividad */
+}
+
+.tech-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tech-card h2 {
+    color: #005A9C;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.image-placeholder {
+    background-color: #e9ecef;
+    border: 2px dashed #ccc;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px 0;
+    color: #666;
+    border-radius: 4px;
+}
+
+/* ===== Table Styling ===== */
+.tech-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tech-card table th, .tech-card table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tech-card table th {
+    background-color: #005A9C;
+    color: white;
+}
+
+/* ===== NUEVOS ESTILOS: Detailed Principles Section ===== */
+.detailed-principles {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.detailed-principles h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.detail-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.detail-box h3 {
+    color: #005A9C;
+    margin-top: 0;
+}
+.detail-box h4 {
+    margin-top: 20px;
+}
+
+.detail-box ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.detail-box ul li {
+    margin-bottom: 10px;
+}
+
+/* ===== Conclusions & References ===== */
+.conclusions, .references {
+    background: #fff;
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+/* ===== ESTILO PARA IMAGEN CENTRAL ===== */
+.centered-image-container {
+    text-align: center; /* La magia para centrar la imagen */
+    padding: 20px 0;    /* Añade un poco de espacio vertical */
+    margin: 30px 0;     /* Margen para separarlo de las otras secciones */
+    border-top: 1px solid #ccc; /* Línea separadora superior */
+    border-bottom: 1px solid #ccc; /* Línea separadora inferior */
+}
+
+.centered-image-container img {
+    max-width: 60%; /* La imagen no ocupará más del 60% del ancho de la página */
+    height: auto;   /* Mantiene la proporción de la imagen al escalar */
+    border-radius: 8px; /* Le da esquinas redondeadas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Una sombra sutil para que resalte */
+}
+/* --- Estilos mejorados para la sección de Referencias --- */
+
+.references {
+    background-color: #f8f9fa; /* Un fondo gris muy sutil para diferenciar la sección */
+    border-top: 3px solid #005A9C; /* Una línea superior con el color de acento */
+    padding: 2rem 2.5rem; /* Un poco más de espacio interno */
+}
+
+/* Estilos para los links dentro de las referencias */
+.reference-list a {
+    color: #005A9C; /* Usa el mismo color azul de tus encabezados para consistencia */
+    text-decoration: none; /* Quita el subrayado por defecto para un look más limpio */
+    font-weight: 600; /* Hace el link un poco más notorio */
+    word-break: break-all; /* Evita que links muy largos rompan el diseño */
+}
+
+/* Efecto al pasar el mouse sobre el link */
+.reference-list a:hover {
+    text-decoration: underline; /* Agrega el subrayado solo al pasar el mouse */
+    color: #003d6b; /* Oscurece un poco el color para dar feedback */
+}
+/* --- Estilos para la nueva sección de detalles técnicos --- */
+.technical-details {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.technical-details h3 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+/* --- Estilos para el Menú de Navegación Principal --- */
+.main-nav {
+    display: flex; /* Pone los links en una fila */
+    gap: 25px; /* Crea el espacio entre cada link */
+}
+
+.main-nav a {
+    color: #333333; /* Color de texto principal */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: 600; /* Hace la letra un poco más gruesa */
+    font-size: 1em;
+    padding-bottom: 5px; /* Espacio para el borde inferior al pasar el mouse */
+    border-bottom: 2px solid transparent; /* Borde inferior invisible por defecto */
+    transition: color 0.3s, border-color 0.3s; /* Transición suave */
+}
+
+.main-nav a:hover {
+    color: #005A9C; /* Cambia a color azul al pasar el mouse */
+    border-bottom-color: #005A9C; /* Muestra el borde inferior azul */
+}
+
+/* ===== BONUS: SCROLL SUAVE ===== */
+/* Pon esto al principio de tu CSS para un efecto de scroll más elegante */
+html {
+    scroll-behavior: smooth;
+}
+/* --- Banner para Miembros del Equipo --- */
+.team-banner {
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Añade un poco de espacio arriba y abajo */
+    background-color: #ffffff; /* Fondo blanco para que coincida con el header */
+    font-size: 0.9em; /* Un tamaño de letra ligeramente más pequeño */
+    color: #555; /* Un color de texto un poco más suave */
+    border-bottom: 2px solid #e0e0e0; /* Una línea inferior sutil para separarlo */
+}
+
+.team-banner p {
+    margin: 0; /* Elimina cualquier margen por defecto del párrafo */
+}
