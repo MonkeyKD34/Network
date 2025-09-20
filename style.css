@@ -264,3 +264,53 @@ html {
 .team-banner p {
     margin: 0; /* Elimina cualquier margen por defecto del párrafo */
 }
+/* ==================================================== */
+/* REGLAS PARA DISEÑO RESPONSIVO (MÓVIL)         */
+/* ==================================================== */
+
+/* --- Regla general para que las imágenes nunca se corten --- */
+img {
+    max-width: 100%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+}
+
+/* Aplica estos estilos en pantallas de 768px o menos (tablets y smartphones) */
+@media (max-width: 768px) {
+
+    /* 1. Arreglo del Encabezado y Menú de Navegación */
+    .header-container {
+        flex-direction: column; /* Apila los logos y el menú verticalmente */
+        gap: 20px; /* Añade espacio entre los logos y el menú */
+    }
+
+    .main-nav {
+        flex-wrap: wrap; /* Permite que el menú ocupe varias líneas si no cabe */
+        justify-content: center; /* Centra los botones del menú */
+        gap: 15px; /* Reduce el espacio entre botones */
+    }
+    
+    .main-nav a {
+        font-size: 0.9em; /* Reduce un poco el tamaño de la letra del menú */
+    }
+
+
+    /* 2. Arreglo de las Columnas Principales */
+    .main-content {
+        flex-direction: column; /* Apila las columnas de ADSL y FTTH una sobre otra */
+    }
+
+
+    /* 3. Ajustes de Texto y Espaciado para mejor lectura */
+    .hero h1 {
+        font-size: 2em; /* Reduce el tamaño del título principal */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduce el tamaño de los subtítulos */
+    }
+
+    /* Reduce el padding en las secciones para aprovechar el espacio */
+    .column, .conclusions, .references, .technical-details {
+        padding: 1.5rem;
+    }
+}
