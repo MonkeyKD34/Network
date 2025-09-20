@@ -163,7 +163,9 @@
             <p>
                 The internet's journey began with narrowband technologies like dial-up, which were slow and occupied the entire phone line. The demand for an "always-on" connection with higher speeds led to the creation of broadband. <strong>ADSL (Asymmetric Digital Subscriber Line)</strong> emerged as a brilliant transitional solution because it leveraged the vast, existing network of copper telephone wires, making it a cost-effective and rapid upgrade. However, as digital demands for streaming, gaming, and cloud services grew, the physical limitations of copper became a bottleneck. This necessitated a fundamental shift to <strong>FTTH (Fiber to the Home)</strong>, a technology built from the ground up to provide virtually limitless bandwidth and superior reliability.
             </p>
-            <img src="img/Broadband.png" alt="Evolución de las tecnologías de acceso a Internet" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
+            <div class ="centered-image-container">
+                <img src="img/Broadband.png" alt="Evolución de las tecnologías de acceso a Internet" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
+            </div>
 
             <h3>ADSL: Key Technical Details</h3>
             <p>
@@ -193,8 +195,9 @@
             </tr>
             </tbody>
             </table>
-            <img src="img/FDM.png" alt="Asignación de frecuencias en ADSL" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
-
+            <div class="centered-image-container">
+                <img src="img/FDM.png" alt="Asignación de frecuencias en ADSL" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
+            </div>
             <h3>FTTH (GPON): Key Technical Details</h3>
             <p>
                 <strong>WDM and TDMA in GPON:</strong> In a GPON network, a single fiber is shared among multiple users. To manage this without data collisions, two key methods are used. <strong>Wavelength Division Multiplexing (WDM)</strong> uses different wavelengths (colors) of light to separate downstream traffic from upstream traffic (e.g., 1490 nm for downstream, 1310 nm for upstream). For the upstream path, where all users transmit on the same wavelength, <strong>Time Division Multiple Access (TDMA)</strong> is used. The central OLT assigns a unique, precise time slot to each user's ONT, ensuring that their data packets travel up the shared fiber one after another in an orderly fashion.
@@ -202,7 +205,9 @@
             <p>
                 <strong>"Future-Proof" by Design:</strong> The most significant strategic advantage of FTTH is its scalability. The physical fiber optic cable has a massive data capacity, far exceeding current needs. This means that as speed requirements increase in the future, the expensive deployed fiber infrastructure remains in place. Upgrades to next-generation standards like <strong>XG-PON (10 Gbps)</strong> or even faster future technologies are achieved simply by replacing the electronics (the OLT at the central office and the ONT at the user's home), making it a long-lasting and "future-proof" investment.
             </p>
-            <img src="img/GPON.png" alt="Arquitectura GPON en FTTH" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
+            <div class="centered-image-container">
+                <img src="img/GPON.png" alt="Arquitectura GPON en FTTH" style="display: block; margin: 1.5rem auto; max-width: 600px; border-radius: 4px;">
+            </div>
         </section>
 
     </main>
@@ -285,5 +290,4 @@
   });
 </script>
 </body>
-
 </html>
